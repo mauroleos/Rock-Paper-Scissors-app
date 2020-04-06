@@ -9,7 +9,7 @@ const possibleChoices = document.querySelectorAll(".choices");
 
 // Get userChoice
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    userchoice = e.target.id
+    userChoice = e.target.id
     randomComputerChoice();
     finalResults();
     computerAnswer.innerHTML = computerChoice
@@ -18,7 +18,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 }))
 
 //Get a random computerChoice number
-function randomComputerChoice() {
+let randomComputerChoice = () => {
     if (randomNumber === 1) {
         return computerChoice = 'rock'
     } else if (randomNumber === 2) {
@@ -33,16 +33,16 @@ function finalResults() {
     if (computerChoice == userChoice) {
         return results = "It's a tie!"
     } else if (computerChoice === 'rock' && userChoice === 'paper') {
-        return results = 'you lost'
+        return results = 'You lost'
     } else if (computerChoice === 'rock' && userChoice === 'scissors') {
-        return results = 'you win!'
+        return results = 'You win!'
     } else if (computerChoice === 'paper' && userChoice === 'rock') {
-        return results = 'you lost'
+        return results = 'You lost'
     } else if (computerChoice === 'paper' && userChoice === 'scissors') {
-        return results = 'you win!'
+        return results = 'You win!'
     } else if (computerChoice === 'scissors' && userChoice === 'rock') {
-        return results = 'you win!'
+        return results = 'You win!'
     } else if (computerChoice === 'scissors' && userChoice === 'paper') {
-        return results = 'you lost'
+        return results = 'You lost'
     }
 }
