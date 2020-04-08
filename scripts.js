@@ -40,9 +40,9 @@ function finalResults() {
     if (computerChoice == userChoice) {
         return results = "It's a tie!"
     } else if (computerChoice === 'rock' && userChoice === 'paper') {
-        return results = 'You lost'
+        return results = 'You Win!'
     } else if (computerChoice === 'rock' && userChoice === 'scissors') {
-        return results = 'You win!'
+        return results = 'You lost'
     } else if (computerChoice === 'paper' && userChoice === 'rock') {
         return results = 'You lost'
     } else if (computerChoice === 'paper' && userChoice === 'scissors') {
