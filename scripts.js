@@ -6,14 +6,12 @@ const computerAnswer = document.getElementById("computer-choice");
 const randomNumber = Math.floor(Math.random() * 4);
 const userAnswer = document.getElementById("user-choice");
 const possibleChoices = document.querySelectorAll(".choices");
-var score = 0;
+const restartBtn = document.getElementById("restart-button");
 
-//Creating a scoreboard 
-function drawScore() {
-    ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095DD";
-    ctx.fillText("Score: "+score, 8, 20);
-}
+// Restart Game
+restartBtn.addEventListener('click', () => {
+    document.location.reload();
+});
 
 // Get userChoice
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
@@ -23,13 +21,8 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     computerAnswer.innerHTML = computerChoice
     userAnswer.innerHTML = userChoice
     displayResults.innerHTML = results
-    setTimeout (restartGame, 3000);
+    // setTimeout (restartGame, 3000);
 }))
-
-let restartGame = () =>{
-    location.reload();
-}
-//or on click restart?
 
 //Get a random computerChoice number
 let randomComputerChoice = () => {
