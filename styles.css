@@ -4,9 +4,11 @@
     background-image: url("images/rock.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     background-color: transparent;
+    flex-direction: auto;
+    margin: auto;
   }
   
   #paper {
@@ -15,9 +17,11 @@
     background-image: url("images/paper.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     background-color: transparent;
+    flex-direction: auto;
+    margin: auto;
   }
   
   #scissors {
@@ -26,22 +30,26 @@
     background-image: url("images/scissors.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     background-color: transparent;
+    flex-direction: auto;
+    margin: auto;
   }
 
 body{
-    background-color: #c7f1fc;
-    justify-content: center;
+   background-color: #c7f1fc;
+  justify-content: center;
 	margin-bottom: 30px;
 	margin-top: 30px;
 	font-family: 'Comic Sans MS';
 	margin: 0;
 	text-align: center;
 	font-size: 20px;
-	color: Black;
+	color: black;
 	flex-direction: column;
+  margin: auto;
+  flex-direction: auto;
 	margin: auto;
 	}
 
@@ -56,27 +64,44 @@ body{
   width: 100px;
   margin-top: 40px;
   font: bold 15px arial, sans-serif;
+  flex-direction: auto;
+	margin: auto;
 }
 
 h2{
-	margin-top: 30px;
+  margin-top: 30px;
+  margin: auto;
+  flex-direction: auto;
+	margin: auto;
 }
 
 #computer-choice{
+  flex-direction: column;
+	margin: auto;
 	font-family: 'Comic Sans MS';
 	font-size: 35px;
-	color: Black;
+  color: steelblue;
+  flex-direction: auto;
+	margin: auto;
 }
 
 #user-choice{
-    font-family: 'Comic Sans MS';
+  flex-direction: column;
+	margin: auto;
+  font-family: 'Comic Sans MS';
 	font-size: 35px;
-	color: Black;
+  color: steelblue;
+  flex-direction: auto;
+	margin: auto;
 }
 
 #results{
-    font-family: 'Comic Sans MS', bold;
+  flex-direction: column;
+	margin: auto;
+  font-family: 'Comic Sans MS', bold;
 	font-size: 35px;
-	color: Black;
+  color: steelblue;
+  flex-direction: auto;
+	margin: auto;
 }
 
