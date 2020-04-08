@@ -8,6 +8,7 @@ const userAnswer = document.getElementById("user-choice");
 const possibleChoices = document.querySelectorAll(".choices");
 var score = 0;
 
+//Creating a scoreboard 
 function drawScore() {
     ctx.font = "16px Arial";
     ctx.fillStyle = "#0095DD";
@@ -28,6 +29,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 let restartGame = () =>{
     location.reload();
 }
+//or on click restart?
 
 //Get a random computerChoice number
 let randomComputerChoice = () => {
