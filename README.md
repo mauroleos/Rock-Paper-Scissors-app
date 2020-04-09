@@ -6,7 +6,7 @@ Click <a href="https://mauroleos.github.io/Rock-Paper-Scissors-app//">here</a> t
 <img src="images/rock-paper-scissors.png" alt="image">
 
 # Summary
-This app really gave me the oppurtunity to really dive into what is going on behind the scenes and gain a better understanding of JavaScript as a whole. This game takes a user input by collecting the id of a clicked image, compares that to the computers randomly generated choice, and then displays the results to the screen. The user can play as many times as they like. I had an incredible time working on this application!
+This app really gave me the oppurtunity to really dive deep into Javascript and gain a better understanding on how it works. This game takes a user input by collecting the "id" of a clicked image (rock, paper, or scissors), compares that to the computers randomly generated choice, and then displays the results to the screen. The user has the option to play as many times as they like. I had an incredible time working on this application!
 
 # Author
 <strong>Mauro Leos</strong>-<i>Full-Stack Software Developer</i>-<a href="https://www.linkedin.com/in/mauro-leos-b4103a11b/">LinkedIn</a>
