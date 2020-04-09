@@ -73,21 +73,6 @@ body{
     margin: auto;
   }
 
-
-/* #restart-button{
-  background: #223641;
-  border-radius: 10px;
-  color: white;
-  border-style: outset;
-  border-color: #0066A2;
-  height: 50px;
-  width: 100px;
-  margin-top: 40px;
-  font: bold 15px arial, sans-serif;
-  flex-direction: auto;
-	margin: auto;
-} */
-
 h2{
   margin-top: 30px;
   margin: auto;
