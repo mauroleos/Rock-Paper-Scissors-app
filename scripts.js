@@ -63,9 +63,9 @@ let getScore = () => {
     } else if (computerChoice === 'paper' && userChoice === 'rock') {
         userScore + 0, computerScore++;
     } else if (computerChoice === 'paper' && userChoice === 'scissors') {
-        userScore++, computerScore = 0;
+        userScore++, computerScore + 0;
     } else if (computerChoice === 'scissors' && userChoice === 'rock') {
-        userScore++, computerScore = 0;
+        userScore++, computerScore + 0;
     } else if (computerChoice === 'scissors' && userChoice === 'paper') {
         userScore + 0, computerScore++;
     }
