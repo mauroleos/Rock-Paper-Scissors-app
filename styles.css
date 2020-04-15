@@ -80,6 +80,10 @@ h2{
 	margin: auto;
 }
 
+.choices:hover {
+  cursor: pointer;
+}
+
 #computer-choice{
   flex-direction: column;
 	margin: auto;

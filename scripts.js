@@ -1,9 +1,3 @@
-let computerChoice
-let userChoice
-var results = finalResults()
-const displayResults = document.getElementById("results");
-const computerAnswer = document.getElementById("computer-choice");
-const userAnswer = document.getElementById("user-choice");
 const possibleChoices = document.querySelectorAll(".choices");
 const restartBtn = document.getElementById("restart-button");
 let userScore = 0;
@@ -11,52 +5,56 @@ let computerScore = 0;
 
 // Get userChoice
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    userChoice = e.target.id
-    randomComputerChoice();
-    finalResults();
-    getScore();
-    computerAnswer.innerHTML = computerChoice
-    userAnswer.innerHTML = userChoice
-    displayResults.innerHTML = results
+    userChoice = e.target.id;
+    const computerChoice = randomComputerChoice();
+    const results = finalResults(computerChoice, userChoice);
+  
+    getScore(computerChoice, userChoice);
+  
+    const computerAnswer = document.getElementById("computer-choice");
+    computerAnswer.innerHTML = computerChoice;
+   
+    const userAnswer = document.getElementById("user-choice");
+    userAnswer.innerHTML = userChoice;
+   
+    const displayResults = document.getElementById("results");
+    displayResults.innerHTML = results;
 }))
 
 //Get a random computerChoice number
 let randomComputerChoice = () => {
     const randomNumber = Math.floor(Math.random() * 4);
     if (randomNumber === 1) {
-        computerChoice = 'rock'
+        return 'rock';
     } else if (randomNumber === 2) {
-        computerChoice = 'paper'
+        return 'paper';
     } else {
-        computerChoice = 'scissors'
+        return 'scissors';
     }
-    return computerChoice;
 }
 
 // Get results
-function finalResults() {
+function finalResults(computerChoice, userChoice) {
     if (computerChoice == userChoice) {
-        return results = "It's a tie!"
+        return "It's a tie!"
     } else if (computerChoice === 'rock' && userChoice === 'paper') {
-        return results = 'You Win!'
+        return 'You Win!'
     } else if (computerChoice === 'rock' && userChoice === 'scissors') {
-        return results = 'You lost'
+        return 'You lost'
     } else if (computerChoice === 'paper' && userChoice === 'rock') {
-        return results = 'You lost'
+        return 'You lost'
     } else if (computerChoice === 'paper' && userChoice === 'scissors') {
-        return results = 'You win!'
+        return 'You win!'
     } else if (computerChoice === 'scissors' && userChoice === 'rock') {
-        return results = 'You win!'
+        return 'You win!'
     } else if (computerChoice === 'scissors' && userChoice === 'paper') {
-        return results = 'You lost'
+        return 'You lost'
     }
 }
 
 //Get Scoreboard
-let getScore = () => {
-    if (computerChoice == userChoice) {
-        return results = "It's a tie!"
-    } else if (computerChoice === 'rock' && userChoice === 'paper') {
+let getScore = (computerChoice, userChoice) => {
+    if (computerChoice === 'rock' && userChoice === 'paper') {
         userScore++, computerScore + 0;
     } else if (computerChoice === 'rock' && userChoice === 'scissors') {
         userScore + 0, computerScore++;
