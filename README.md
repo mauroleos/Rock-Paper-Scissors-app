@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors-app
-This is Rock-Paper-Scissors app written in Javascript, HTML, and CSS.
+This is a Rock-Paper-Scissors app written in Javascript, HTML, and CSS.
 
 Click <a href="https://mauroleos.github.io/Rock-Paper-Scissors-app//">here</a> to see website.
 
